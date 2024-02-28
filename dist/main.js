@@ -13,14 +13,7 @@ async function bootstrap() {
     .build();
   app.use(cookieParser());
   app.enableCors({
-    origin: [
-      'http://main.d1rlk4399pr735.amplifyapp.com',
-      //   '*',
-      //   'http://localhost:3000',
-      //   'http://157.245.199.88:3000',
-      //   'http://localhost:8000',
-      //   'http://157.245.199.88:8000',
-    ],
+    origin: ['http://main.d1rlk4399pr735.amplifyapp.com'],
     credentials: true,
   });
   const customOptions = {
