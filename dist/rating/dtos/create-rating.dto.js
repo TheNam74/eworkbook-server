@@ -1,0 +1,64 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CreateRatingDto = void 0;
+const swagger_1 = require("@nestjs/swagger");
+const class_validator_1 = require("class-validator");
+class RatingContent {
+}
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, swagger_1.ApiProperty)({ type: String, description: 'ratingText' }),
+    __metadata("design:type", String)
+], RatingContent.prototype, "ratingText", void 0);
+__decorate([
+    (0, class_validator_1.IsNumber)(),
+    (0, swagger_1.ApiProperty)({ type: Number, description: 'star' }),
+    __metadata("design:type", Number)
+], RatingContent.prototype, "star", void 0);
+class CreateRatingDto {
+}
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, swagger_1.ApiProperty)({ type: String, description: 'id' }),
+    __metadata("design:type", String)
+], CreateRatingDto.prototype, "id", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, swagger_1.ApiProperty)({ type: String, description: 'materialId' }),
+    __metadata("design:type", String)
+], CreateRatingDto.prototype, "materialId", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, swagger_1.ApiProperty)({ type: String, description: 'userId' }),
+    __metadata("design:type", String)
+], CreateRatingDto.prototype, "userId", void 0);
+__decorate([
+    (0, class_validator_1.IsDate)(),
+    (0, swagger_1.ApiProperty)({ type: String, description: 'createdDate' }),
+    __metadata("design:type", Date)
+], CreateRatingDto.prototype, "createdDate", void 0);
+__decorate([
+    (0, swagger_1.ApiProperty)({ type: RatingContent, description: 'content' }),
+    __metadata("design:type", RatingContent)
+], CreateRatingDto.prototype, "content", void 0);
+__decorate([
+    (0, class_validator_1.IsNumber)(),
+    (0, swagger_1.ApiProperty)({ type: Number, default: 0, description: 'upVote' }),
+    __metadata("design:type", Number)
+], CreateRatingDto.prototype, "upVote", void 0);
+__decorate([
+    (0, class_validator_1.IsNumber)(),
+    (0, swagger_1.ApiProperty)({ type: Number, default: 0, description: 'downVote' }),
+    __metadata("design:type", Number)
+], CreateRatingDto.prototype, "downVote", void 0);
+exports.CreateRatingDto = CreateRatingDto;
+//# sourceMappingURL=create-rating.dto.js.map
