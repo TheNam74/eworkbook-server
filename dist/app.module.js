@@ -19,7 +19,6 @@ const auth_module_1 = require("./auth/auth.module");
 const app_controller_1 = require("./app.controller");
 const records_module_1 = require("./records/records.module");
 const assignments_module_1 = require("./assignment/assignments.module");
-const pairs_module_1 = require("./pairs/pairs.module");
 const logger_middleware_1 = require("./utils/logger.middleware");
 const consult_module_1 = require("./consults/consult.module");
 let AppModule = class AppModule {
@@ -40,7 +39,6 @@ AppModule = __decorate([
             records_module_1.RecordsModule,
             assignments_module_1.AssignmentsModule,
             ratings_module_1.RatingsModule,
-            pairs_module_1.PairsModule,
             consult_module_1.ConsultModule,
         ],
         providers: [],

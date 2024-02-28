@@ -10,7 +10,6 @@ import { AuthModule } from './auth/auth.module';
 import { AppController } from './app.controller';
 import { RecordsModule } from './records/records.module';
 import { AssignmentsModule } from './assignment/assignments.module';
-import { PairsModule } from './pairs/pairs.module';
 import { LoggerMiddleware } from './utils/logger.middleware';
 import { ConsultModule } from './consults/consult.module';
 // import { AtGuard } from './common/guards/at.guard';
@@ -29,7 +28,6 @@ import { ConsultModule } from './consults/consult.module';
     RecordsModule,
     AssignmentsModule,
     RatingsModule,
-    PairsModule,
     ConsultModule,
   ],
   providers: [
