@@ -14,20 +14,14 @@ async function bootstrap() {
   app.use(cookieParser());
   app.enableCors({
     origin: [
+      'http://main.d1rlk4399pr735.amplifyapp.com',
+      //   '*',
       //   'http://localhost:3000',
       //   'http://157.245.199.88:3000',
       //   'http://localhost:8000',
       //   'http://157.245.199.88:8000',
-      //   'http://student.dev.eworkbook.me',
-      //   'https://student.dev.eworkbook.me',
-      //   'http://teacher.dev.eworkbook.me',
-      //   'https://teacher.dev.eworkbook.me',
-      //   'https://student.eworkbook.me',
-      //   'https://teacher.eworkbook.me',
-      //   'https://main.d1rlk4399pr735.amplifyapp.com',
     ],
-    origin: '*',
-    // credentials: true,
+    credentials: true,
   });
   const customOptions = {
     swaggerOptions: {
