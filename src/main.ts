@@ -17,7 +17,7 @@ async function bootstrap() {
   app.use(cookieParser());
   app.enableCors({
     // true for all origins
-    origin: true,
+    origin: '*',
   });
   const customOptions: SwaggerCustomOptions = {
     swaggerOptions: {
