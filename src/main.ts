@@ -16,11 +16,8 @@ async function bootstrap() {
     .build();
   app.use(cookieParser());
   app.enableCors({
-    origin: [
-      'http://localhost:3000',
-      'http://main.d1rlk4399pr735.amplifyapp.com',
-    ],
-    credentials: true,
+    // true for all origins
+    origin: true,
   });
   const customOptions: SwaggerCustomOptions = {
     swaggerOptions: {
