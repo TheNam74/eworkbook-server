@@ -27,6 +27,7 @@ async function bootstrap() {
       'https://teacher.dev.eworkbook.me',
       'https://student.eworkbook.me',
       'https://teacher.eworkbook.me',
+      'http://main.d1rlk4399pr735.amplifyapp.com',
     ],
     credentials: true,
   });
